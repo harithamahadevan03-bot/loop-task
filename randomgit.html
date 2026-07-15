@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generation</title>
+</head>
+
+<body>
+    <div class="ramdom">
+        <h1 id="r2">1</h1>
+        <button id="select" onclick="Change()"><b>click here</b></button>
+        <button id="select1" onclick="clearRe()"><b>Reset</b></button>
+
+    </div>
+    <script>
+        debugger
+        var changebtn = document.getElementById("r2");
+
+        function Change() {
+            
+
+
+            RN = Math.floor((Math.random()) * 100) + 1
+            changebtn.innerHTML = RN;
+
+            if (RN >=100){
+                alert("You have reached the upper limit!");
+                
+            }
+            else if(RN<10){
+                alert("Again you need random number press Click")
+            }
+            else{
+                console.log("")
+            }
+        }
+
+
+        var clearbtn = document.getElementById("select1");
+        function clearRe() {
+            r2.innerHTML = "1";
+        }
+
+
+    </script>
+
+</body>
+
+</html>
